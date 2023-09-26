@@ -13,7 +13,22 @@ public class GuesingGame {
 		strName = inpt.nextLine();
 		
 		
-		
+		do {
+			
+			System.out.println("Do you want to quit (y/n) ?");
+			String choose = inpt.nextLine();
+			
+			if ( choose.equals("y")) {
+				System.out.println(choose);
+				return;
+			}
+			
+			System.out.println("Please, guess my name.");
+			strName = inpt.nextLine();
+			counter++;
+			
+			
+		} while (!strName.equals("sieng"));
 
 		
 		System.out.println(strName);
